@@ -7,6 +7,15 @@ cache: npm
 install:
 - npm install
 
+script:
+- npm run test
+
+deploy:
+  provider: heroku
+  api_key: a39a477f-10eb-40b5-9b24-7efd911ae074
+  app: no-de-travis
+
+
 
 
 
