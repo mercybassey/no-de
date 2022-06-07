@@ -10,7 +10,16 @@ install:
 script:
 - npm run test
 
+branches:
+  only:
+  - master
 
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep-history: true
+  api_key: 9eab1ffd-8bac-45fd-8b90-23965847f3ab
+  app: no-de-travis
 
 
 
